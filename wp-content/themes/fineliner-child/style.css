@@ -53,6 +53,12 @@ Text Domain: uxbarn
 #root-container #intro p{
 	color:#000;
 }
+#root-container .contact-form.cta-box{
+	overflow: visible;
+}
+#root-container .contact-form.cta-box .wpcf7{
+	padding: 20px 15px 0px;
+}
 /*****************************
 		Button Style
 *****************************/
