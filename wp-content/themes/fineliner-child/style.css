@@ -53,14 +53,29 @@ body{
 	text-transform: uppercase;
 }
 #root-container h1, #root-container #intro h1{
-	font-family: 'jasminumregular';
-	text-transform: capitalize;
+	text-transform: none;
 	font-size: 24px;
 	color: #000;
+	font-weight: bold;
+	line-height: 40pt;
 }
-#root-container h2{
+#root-container h2, #root-container #content-container h2{
 	font-family: 'ITCAvantGardePro-XLt';
+	text-transform: lowercase;
+	font-size: 12pt!important;
+	color: #000;
+	letter-spacing: 0.1em;
 }
+#root-container #content-container h2::first-letter{
+	text-transform: uppercase;
+}
+#root-container #content-container h3{
+	color: #C5AE87;
+	font-family: 'ITCAvantGardePro-XLt';
+	text-transform: uppercase;
+	font-size: 12pt!important;
+}
+
 /*****************************
 		General Style
 *****************************/
@@ -73,20 +88,6 @@ body{
 }
 #root-container #content-container .columns, #theme-body #root-container #content-container blockquote p{
 	color:#000;
-}
-#root-container #content-container h3{
-	color: #C5AE87;
-	text-transform: uppercase;
-	font-size: 12pt!important;
-}
-#root-container #content-container h2{
-	font-family: 'ITCAvantGardePro-XLt';
-	text-transform: lowercase;
-	font-size: 12pt!important;
-	color: #000;
-}
-#root-container #content-container h2::first-letter{
-	text-transform: uppercase;
 }
 #root-container #intro p{
 	color:#000;
