@@ -31,11 +31,11 @@ Text Domain: uxbarn
 @font-face {
     font-family: 'ITCAvantGardePro-XLt';
     src: url('fonts/Jasminum-webfont.eot');
-    src: url('ITCAvantGardePro-XLt.eot?#iefix') format('embedded-opentype'),  
-	  	url('ITCAvantGardePro-XLt.otf')  format('opentype'),
-		url('ITCAvantGardePro-XLt.woff') format('woff'), 
-		url('ITCAvantGardePro-XLt.ttf')  format('truetype'), 
-		url('ITCAvantGardePro-XLt.svg#ITCAvantGardePro-XLt') format('svg');
+    src: url('fonts/ITCAvantGardePro-XLt.eot?#iefix') format('embedded-opentype'),  
+	  	url('fonts/ITCAvantGardePro-XLt.otf')  format('opentype'),
+		url('fonts/ITCAvantGardePro-XLt.woff') format('woff'), 
+		url('fonts/ITCAvantGardePro-XLt.ttf')  format('truetype'), 
+		url('fonts/ITCAvantGardePro-XLt.svg#ITCAvantGardePro-XLt') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -53,6 +53,7 @@ body{
 	text-transform: uppercase;
 }
 #root-container h1, #root-container #intro h1{
+	font-family: 'jasminumregular';
 	text-transform: none;
 	font-size: 24px;
 	color: #000;
@@ -61,13 +62,13 @@ body{
 }
 #root-container h2, #root-container #content-container h2{
 	font-family: 'ITCAvantGardePro-XLt';
-	text-transform: lowercase;
+	text-transform: lowercase!important;
 	font-size: 12pt!important;
 	color: #000;
 	letter-spacing: 0.1em;
 }
-#root-container #content-container h2::first-letter{
-	text-transform: uppercase;
+#root-container h2::first-letter, #root-container #content-container h2::first-letter{
+	text-transform: uppercase!important;
 }
 #root-container #content-container h3{
 	color: #C5AE87;
@@ -79,6 +80,16 @@ body{
 /*****************************
 		General Style
 *****************************/
+.text-center{
+	text-align: center;
+}
+.text-left{
+	text-align: left;
+}
+.text-right{
+	text-align: right;
+}
+
 #root-container{
 	padding: 67px 0 10px;
 }
@@ -131,4 +142,13 @@ body{
 }
 #content-container .inner-widget-item .bar-social li{
 	margin-left: 4px;
+}
+
+/*****************************
+		Footer Style
+*****************************/
+#text-5.footer-widget-item img{
+	width: 80px;
+	height: auto;
+	margin: 0 5px;
 }
