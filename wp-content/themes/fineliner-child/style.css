@@ -51,8 +51,9 @@ body{
 	font-family: "Helvetica Neue";
 	font-size: 10pt;
 	text-transform: uppercase;
+	color: #000;
 }
-#root-container h1, #root-container #intro h1{
+h1, #root-container h1, #root-container #intro h1{
 	font-family: 'jasminumregular';
 	text-transform: none;
 	font-size: 24px;
