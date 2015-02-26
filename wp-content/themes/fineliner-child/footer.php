@@ -74,51 +74,7 @@
 		                
 		            <?php endif; ?>
 				
-					<hr class="layout-divider content-width" />
-				
-					<!-- Footer Bar -->
-					<div id="footer-bar-container">
-						<div id="footer-bar" class="content row">
-							
-							<?php
-	                        
-	                            $footer_logo_url = get_option( 'uxbarn_sc_footer_site_logo' );
-	                            
-	                            if ( $footer_logo_url ) {
-                            	
-									$attachment_id = uxbarn_get_attachment_id_from_src( $footer_logo_url );
-									$image_array = wp_get_attachment_image_src( $attachment_id, 'full' );
-		                            
-	                                echo '<a id="footer-logo" href="' . esc_url( home_url() ) . '"><img src="' . $footer_logo_url . '" alt="' . get_bloginfo( 'name' ) . '" title="' . get_bloginfo( 'name' ) . '" width="' . $image_array[1] . '" height="' . $image_array[2] . '" /></a>';
-	                            }
-								
-								$social_string = uxbarn_get_footer_social_list_string();
-	                        
-	                        ?>
-							
-							<p id="copyright-text">
-								<?php
-									
-									$copyright_text = __( '2013 &copy; Fineliner. Premium Theme by <a href="http://themeforest.net/user/UXbarn?ref=UXbarn">UXbarn</a>.', 'uxbarn' );
-									
-									if ( function_exists( 'ot_get_option' ) ) {
-										echo balanceTags( wp_kses_post( ot_get_option( 'uxbarn_to_setting_copyright_text' ) ), true );
-									} else {
-										echo $copyright_text;
-									}
-									
-								?>
-							</p>
-							
-							<?php if ( $social_string != '' ) : ?>
-                                <ul class="bar-social">
-                                    <?php echo $social_string; ?>
-                                </ul>
-		                    <?php endif; ?>
-							
-						</div>
-					</div>
-					<!-- End id="footer-bar-container" -->
+					<!-- <hr class="layout-divider content-width" /> -->
 					
 				</div>
 				<!-- End id="footer-root-container" -->

@@ -7,6 +7,7 @@ function theme_enqueue_styles() {
         get_stylesheet_directory_uri() . '/style.css',
         array('parent-style')
     );
+    wp_enqueue_script('matchHeightjs', get_stylesheet_directory_uri() . '/js/jquery.matchHeight-min.js', array('jquery'), null, false);
 }
 
 register_widget('Social_Media_Widget');

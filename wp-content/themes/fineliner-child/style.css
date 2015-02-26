@@ -26,12 +26,47 @@ Text Domain: uxbarn
          url('fonts/Jasminum-webfont.svg#jasminumregular') format('svg');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+    font-family: 'ITCAvantGardePro-XLt';
+    src: url('fonts/Jasminum-webfont.eot');
+    src: url('ITCAvantGardePro-XLt.eot?#iefix') format('embedded-opentype'),  
+	  	url('ITCAvantGardePro-XLt.otf')  format('opentype'),
+		url('ITCAvantGardePro-XLt.woff') format('woff'), 
+		url('ITCAvantGardePro-XLt.ttf')  format('truetype'), 
+		url('ITCAvantGardePro-XLt.svg#ITCAvantGardePro-XLt') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /*****************************
+		Fonts Style
+*****************************/
+body{
+	font-family: "Helvetica Neue";
+	font-size: 9pt;
+}
+#menu-wrapper #menu-main-nav a{
+	font-family: "Helvetica Neue";
+	font-size: 10pt;
+	text-transform: uppercase;
+}
+#root-container h1, #root-container #intro h1{
+	font-family: 'jasminumregular';
+	text-transform: capitalize;
+	font-size: 24px;
+	color: #000;
+}
+#root-container h2{
+	font-family: 'ITCAvantGardePro-XLt';
+}
+/*****************************
 		General Style
 *****************************/
+#root-container{
+	padding: 67px 0 10px;
+}
 
 #root-container #content-container p{
 	margin-bottom: 15px;
@@ -41,24 +76,37 @@ Text Domain: uxbarn
 }
 #root-container #content-container h3{
 	color: #C5AE87;
+	text-transform: uppercase;
+	font-size: 12pt!important;
 }
 #root-container #content-container h2{
+	font-family: 'ITCAvantGardePro-XLt';
+	text-transform: lowercase;
+	font-size: 12pt!important;
 	color: #000;
-	text-transform: capitalize;
-
 }
-#root-container #intro h1{
-	color:#000;
+#root-container #content-container h2::first-letter{
+	text-transform: uppercase;
 }
 #root-container #intro p{
 	color:#000;
 }
-#root-container .contact-form.cta-box{
+#root-container .uxb-col.large-6.columns.contact-form.cta-box.bottom-line{
 	overflow: visible;
+}
+#root-container .uxb-col.large-6.columns.contact-form.cta-box.bottom-line *{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 }
 #root-container .contact-form.cta-box .wpcf7{
 	padding: 20px 15px 0px;
 }
+/*****************************
+		Home Page Style
+*****************************/
+
+
 /*****************************
 		Button Style
 *****************************/
